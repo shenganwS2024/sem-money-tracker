@@ -1,0 +1,66 @@
+/* client/src/screens/MobileLayout.css */
+
+/* Container that simulates a "phone screen" width. 
+   For an actual mobile, you'd rely on responsive design 
+   or simply let the phone do the sizing. */
+   .app-container {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    min-height: 600px;
+    font-family: sans-serif;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #bcd7f7; /* Light blue-ish */
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* When there's a back arrow on the left, we use .header-back */
+  .header-back {
+    justify-content: center; /* center the h1 but keep space for arrow */
+  }
+  
+  .header-back .back-arrow {
+    position: absolute;
+    left: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 24px; /* big arrow */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Content area */
+  .content {
+    padding: 16px;
+  }
+  
+  /* A primary button (similar to what's in Button.tsx) */
+  .primary-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  /* Table styling (simple) */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: left;
+  }
+  
